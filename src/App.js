@@ -4,11 +4,15 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Sidebar, ThemeSettings} from "./components";
 import { Ecommerce, Orders, Calendar, Employees, Customers, Kanban, ColorPicker, Editor, Line} from './pages';
+// import { useStateContext } from './contexts/ContextProvider';
+import { useStateContext } from './contexts/ContextProvider';
 
 import './App.css';
 
 const App = ()=>{
-    const activeMenu = true;
+    // const {activeMenu} = useStateContext();
+    const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+
     return (
        <BrowserRouter>
        
@@ -41,7 +45,6 @@ bg-white
 <Navbar/>
 
         </div>
-        </div>
 
 
 
@@ -63,6 +66,7 @@ bg-white
 
 </Routes>
 
+</div>
 </div>
 
        </div>
