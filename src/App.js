@@ -22,7 +22,7 @@ const App = ()=>{
             <TooltipComponent  content="Settings" position="Top">
 <button type="button" 
 onClick={()=>setThemeSettings(true)}
-className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white" style={{background: 'blue', borderRadius:'50%'}}>
+className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white" style={{background: currentColor, borderRadius:'50%'}}>
     <FiSettings/>
 </button>
 
