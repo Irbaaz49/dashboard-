@@ -14,6 +14,7 @@ const App = ()=>{
     const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
 
     return (
+    <div className={currentMode === 'Dark' ? 'dark' : ''}>
        <BrowserRouter>
        
        <div className="flex relative dark:bg-main-dark-bg">
@@ -74,6 +75,7 @@ bg-white
        </div>
        
        </BrowserRouter>
+       </div>
     )
 }
 
