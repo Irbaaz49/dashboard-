@@ -20,7 +20,9 @@ const App = ()=>{
         <div className="fixed right-4 bottom-4" style={{zInde:'1000'}}>
 
             <TooltipComponent  content="Settings" position="Top">
-<button type="button" className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white" style={{background: 'blue', borderRadius:'50%'}}>
+<button type="button" 
+onClick={()=>setThemeSettings(true)}
+className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white" style={{background: 'blue', borderRadius:'50%'}}>
     <FiSettings/>
 </button>
 
@@ -50,7 +52,7 @@ bg-white
 
 
 <div>
-
+{themeSettings && <ThemeSettings/>}
 <Routes>
 <Route path="/" element={<Ecommerce></Ecommerce>}/>
 <Route path="/ecommerce" element={<Ecommerce></Ecommerce>}/>
