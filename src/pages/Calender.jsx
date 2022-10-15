@@ -13,10 +13,9 @@ const Calender =()=>{
       <Header category="App" title="Calendar" />
       <ScheduleComponent
       height="650px"
-    //   ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
       eventSettings={{ dataSource: scheduleData }}
-      dragStart={onDragStart}
+     
       >
 
 <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]} />
