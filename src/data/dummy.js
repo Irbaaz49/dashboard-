@@ -500,10 +500,7 @@ export const links = [
   {
     title: 'Apps',
     links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
+     
       {
         name: 'kanban',
         icon: <BsKanban />,
