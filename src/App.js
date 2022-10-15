@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Sidebar, ThemeSettings} from "./components";
-import { Ecommerce, Orders, Calender, Employees, Customers, Kanban, ColorPicker, Editor, Line} from './pages';
+import { Ecommerce, Orders, Calendar, Employees, Customers, Kanban, ColorPicker, Editor, Line} from './pages';
 // import { useStateContext } from './contexts/ContextProvider';
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -64,7 +64,7 @@ bg-white
 <Route path="/customers" element={<Customers></Customers>}/>
 <Route path="/kanban" element={<Kanban></Kanban>}/>
 <Route path="/editor" element={<Editor></Editor>}/>
-<Route path="/calender" element={<Calender></Calender>}/>
+<Route path="/calender" element={<Calendar></Calendar>}/>
 <Route path="/color-picker" element={<ColorPicker></ColorPicker>}/>
 <Route path="/line" element={<Line></Line>}/>
 
